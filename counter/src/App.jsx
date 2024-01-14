@@ -6,6 +6,7 @@ import './App.css'
 function App() {
   const [count, setCount] = useState(0)
 
+  // function to increase value:
   const addValue = () =>{
     console.log("vicky", count);
     
@@ -15,6 +16,8 @@ function App() {
       setCount(count+1)
     }
   }
+
+  // function to decrease value:
   const decreaseValue = () =>{
     console.log("vicky", count);
     
@@ -30,7 +33,9 @@ function App() {
       <h1>chai aur react</h1>
       <h2>counter value: {count}</h2>
       <button onClick={addValue}>add value</button>
-      <button onClick={decreaseValue}>decrease value</button>
+      <button 
+      style={{marginLeft: 20}}
+      onClick={decreaseValue}>decrease value</button>
     </>
   )
 }
